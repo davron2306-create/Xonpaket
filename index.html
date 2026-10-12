@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="XONPAKET — polietilen paketlar ishlab chiqarish. Buyurtma va hamkorlik uchun bog‘laning.">
+<meta name="theme-color" content="#f2b400">
+<title>XONPAKET — Paket emas, taassurot</title>
+<style>
+:root{--yellow:#f2b400;--ink:#171717;--muted:#666;--paper:#fffdf7;--line:#ece6d6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:1px}.brand img{width:58px;height:58px;object-fit:contain;border-radius:10px}.brand small{display:block;color:#b38300;font-size:11px;letter-spacing:0;font-weight:700}
+nav{display:flex;gap:22px;font-size:14px;font-weight:700}nav a:hover{color:#b38300}.menu-btn{display:none;border:0;background:var(--yellow);padding:10px 13px;border-radius:10px;font-weight:800}
+.hero{background:linear-gradient(120deg,#fff9e7,#fff 60%);padding:70px 0 64px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}.eyebrow{display:inline-block;background:#fff0bd;color:#7c5a00;border-radius:999px;padding:7px 13px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.04;letter-spacing:-2px;margin:18px 0}.accent{color:#d39a00}.hero p{font-size:18px;color:#5b5b5b;max-width:580px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 20px;border-radius:12px;font-weight:800;border:2px solid var(--yellow);background:var(--yellow);color:#171717;cursor:pointer}.btn.outline{background:transparent;border-color:#ded5bd}.btn:hover{transform:translateY(-1px)}
+.hero-art{background:#fff;border:1px solid #f0e5c7;border-radius:28px;padding:22px;box-shadow:0 18px 55px #5c430014}.hero-art img{display:block;width:100%;max-height:340px;object-fit:contain}.hero-note{text-align:center;font-weight:800;color:#9a7200;margin:8px 0 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}.stat b{display:block;font-size:17px}.stat span{font-size:12px;color:var(--muted)}
+section{padding:72px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 36px}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:0 0 12px;letter-spacing:-1px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}.card-top{height:170px;background:linear-gradient(135deg,#fff4c9,#fdfdfb);display:flex;align-items:center;justify-content:center;font-size:62px}.card-body{padding:22px}.card h3{margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--muted);font-size:14px}
+.about{background:var(--paper)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}.about-panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px}.about-panel h3{font-size:25px;margin:0 0 14px}.checks{padding:0;list-style:none;margin:20px 0 0}.checks li{margin:12px 0;display:flex;gap:10px}.checks li:before{content:"✓";background:#fff0bd;color:#8b6500;width:24px;height:24px;flex:0 0 24px;border-radius:50%;text-align:center;font-weight:900}
+.process{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:24px;border-radius:18px;background:#fafafa;border:1px solid var(--line)}.step strong{width:40px;height:40px;display:grid;place-items:center;background:var(--yellow);border-radius:12px;font-size:18px}.step h3{margin:16px 0 6px}.step p{margin:0;color:var(--muted);font-size:14px}
+.contact{background:#171717;color:#fff}.contact .section-head p{color:#c8c8c8}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}.contact-card{padding:26px;border:1px solid #393939;border-radius:20px;background:#202020}.contact-row{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid #393939}.contact-row:last-child{border-bottom:0}.contact-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#3b300e;color:#ffd04b;font-size:20px;flex-shrink:0}.contact-row small{display:block;color:#bdbdbd}.contact-row b{overflow-wrap:anywhere}.form{display:grid;gap:13px}.form label{font-size:13px;color:#ddd}.form input,.form textarea,.form select{width:100%;margin-top:5px;padding:13px;border-radius:10px;border:1px solid #4b4b4b;background:#111;color:#fff;font:inherit}.form textarea{min-height:100px;resize:vertical}.form-note{font-size:12px;color:#bdbdbd}
+footer{padding:24px 0;background:#101010;color:#bdbdbd;font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:780px){nav{display:none;position:absolute;left:4%;right:4%;top:78px;background:white;border:1px solid var(--line);border-radius:14px;padding:18px;flex-direction:column;gap:14px;box-shadow:0 12px 30px #0001}nav.open{display:flex}.menu-btn{display:block}.hero{padding:44px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-art{max-width:500px;margin:auto}.cards,.process{grid-template-columns:1fr}.card-top{height:140px}.stats{grid-template-columns:1fr 1fr 1fr}.stat{padding:10px}.stat b{font-size:13px}.stat span{font-size:10px}section{padding:54px 0}h1{letter-spacing:-1px}.hero p{font-size:16px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#bosh"><img src="logo-xonpaket.jpg" alt="XONPAKET logotipi"><span>XONPAKET<small>PAKET EMAS TAASSUROT</small></span></a>
+    <nav id="nav"><a href="#mahsulotlar">Mahsulotlar</a><a href="#biz-haqimizda">Biz haqimizda</a><a href="#jarayon">Ish jarayoni</a><a href="#aloqa">Aloqa</a></nav>
+    <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')" aria-label="Menyuni ochish">Menyu ☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="bosh"><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow">Polietilen qadoqlash mahsulotlari</span>
+    <h1>Paket emas,<br><span class="accent">taassurot.</span></h1>
+    <p>Xonpaket - biznesingiz uchun brendingiz rasmi tushirilgan sifatli paketlar. Mahsulot turi, o‘lchamlari va narxlari haqida batafsil ma’lumot olish uchun biz bilan bog‘laning.</p>
+    <div class="actions"><a class="btn" href="https://t.me/xonpaket" target="_blank" rel="noopener">✈ Telegram orqali yozish</a><a class="btn outline" href="tel:+998882540050">☎ Qo‘ng‘iroq qilish</a></div>
+    <div class="stats"><div class="stat"><b>Buyurtma</b><span>Kelishuv asosida</span></div><div class="stat"><b>O‘lchamlar</b><span>Talab bo‘yicha kelishiladi</span></div><div class="stat"><b>Aloqa</b><span>To‘g‘ridan-to‘g‘ri</span></div></div>
+  </div>
+  <div class="hero-art"><img src="logo-xonpaket.jpg" alt="XONPAKET — Paket emas taassurot"><div class="hero-note">XONPAKET · Ishonchli hamkorlik sari</div></div>
+</div></section>
+<section id="mahsulotlar"><div class="wrap"><div class="section-head"><h2>Mahsulot yo‘nalishlari</h2><p>Quyidagi bo‘limlar namuna sifatida berilgan. Aniq assortiment va ishlab chiqarish imkoniyatlarini korxonangiz ma’lumotlariga moslab yangilash mumkin.</p></div>
+  <div class="cards">
+    <article class="card"><div class="card-top" aria-hidden="true">🛍️</div><div class="card-body"><h3>Mayka paketlar</h3><p>Do‘konlar, savdo nuqtalari va kundalik qadoqlash uchun paketlar. O‘lcham va rangni buyurtma vaqtida kelishish mumkin.</p></div></article>
+    <article class="card"><div class="card-top" aria-hidden="true">📦</div><div class="card-body"><h3>Buyurtma asosidagi paketlar</h3><p>Mahsulot turi, kerakli o‘lcham va qadoqlash talablari bo‘yicha buyurtmani muhokama qiling.</p></div></article>
+    <article class="card"><div class="card-top" aria-hidden="true">🎨</div><div class="card-body"><h3>Logotipli qadoqlash</h3><p>Brendingiz tushirilgan paketlar bo‘yicha imkoniyatlar, bosma turi va minimal buyurtma miqdorini aniqlashtiring.</p></div></article>
+  </div>
+</div></section>
+<section class="about" id="biz-haqimizda"><div class="wrap about-grid">
+  <div><span class="eyebrow">XONPAKET haqida</span><h2 style="font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-1px">Qadoqlashda sizning hamkoringiz</h2><p style="color:#666">Bizning maqsad — mijozning talabini tushunish va mos qadoqlash yechimini topish. Buyurtma berishdan oldin o‘lcham, material, rang, bosma va miqdor kabi tafsilotlarni kelishib oling.</p><a class="btn" href="#aloqa">Buyurtmani muhokama qilish</a></div>
+  <div class="about-panel"><h3>Nimalarni kelishib olamiz?</h3><ul class="checks"><li>Mahsulot turi va o‘lchami</li><li>Material va qalinlik talablari</li><li>Rang va bosma talablari</li><li>Buyurtma miqdori va muddat</li><li>Narx va yetkazib berish shartlari</li></ul></div>
+</div></section>
+<section id="jarayon"><div class="wrap"><div class="section-head"><h2>Buyurtma qanday beriladi?</h2><p>Bir necha oddiy qadamda talablaringizni yuboring.</p></div><div class="process">
+  <div class="step"><strong>1</strong><h3>Talabni yuboring</h3><p>Telegram yoki telefon orqali paket turi, o‘lchami va miqdorini ayting.</p></div>
+  <div class="step"><strong>2</strong><h3>Tafsilotlarni kelishing</h3><p>Material, rang, bosma, narx va ishlab chiqarish muddatini aniqlashtiring.</p></div>
+  <div class="step"><strong>3</strong><h3>Buyurtmani tasdiqlang</h3><p>Kelishilgan shartlar tasdiqlangach, buyurtma bo‘yicha keyingi qadamlarni belgilang.</p></div>
+</div></div></section>
+<section class="contact" id="aloqa"><div class="wrap"><div class="section-head"><h2>Biz bilan bog‘laning</h2><p>Buyurtma yoki hamkorlik haqida yozing — sizga qulay aloqa usulini tanlang.</p></div><div class="contact-grid">
+  <div class="contact-card">
+    <div class="contact-row"><div class="contact-icon">☎</div><div><small>Telefon</small><b><a href="tel:+998882540050">+998 88 254 00 50</a></b></div></div>
+    <div class="contact-row"><div class="contact-icon">✈</div><div><small>Telegram</small><b><a href="https://t.me/xonpaket" target="_blank" rel="noopener">@xonpaket</a></b></div></div>
+    <div class="contact-row"><div class="contact-icon">◎</div><div><small>Instagram</small><b><a href="https://instagram.com/xonpaket" target="_blank" rel="noopener">@xonpaket</a></b></div></div>
+    <p class="form-note">Manzil va ish vaqti tasdiqlangach, bu bo‘limga qo‘shish mumkin.</p>
+  </div>
+  <div class="contact-card"><h3 style="margin-top:0">Buyurtma so‘rovi</h3>
+    <form class="form" id="orderForm">
+      <label>Ismingiz<input id="customerName" name="name" required placeholder="Ismingiz"></label>
+      <label>Mahsulot turi<select id="productType"><option>Mayka paket</option><option>Logotipli paket</option><option>Boshqa polietilen mahsulot</option><option>Maslahat kerak</option></select></label>
+      <label>Buyurtma tafsilotlari<textarea id="details" placeholder="O‘lcham, miqdor, rang va boshqa talablar"></textarea></label>
+      <button class="btn" type="submit">So‘rovni Telegramda yuborish ↗</button>
+      <div class="form-note">Tugma Telegramni ochadi va xabaringizni tayyorlaydi. Yuborishni Telegram ichida o‘zingiz tasdiqlaysiz.</div>
+    </form>
+  </div>
+</div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> XONPAKET. Barcha huquqlar himoyalangan.</span><span>Paket emas, taassurot.</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('orderForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name=document.getElementById('customerName').value.trim();
+  const product=document.getElementById('productType').value;
+  const details=document.getElementById('details').value.trim();
+  const msg=`Assalomu alaykum, XONPAKET!%0AIsm: ${encodeURIComponent(name)}%0AMahsulot: ${encodeURIComponent(product)}%0ATafsilotlar: ${encodeURIComponent(details || 'Hozircha qo‘shimcha ma’lumot yo‘q')}`;
+  window.open('https://t.me/xonpaket?text='+msg,'_blank','noopener');
+});
+</script>
+</body>
+</html>
